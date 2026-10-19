@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{natbib}
+\usepackage{appendix}
+
+\onehalfspacing
+
+\newtheorem{assumption}{Assumption}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
+
+\title{Network Games, Group Inverses, and Comparative Statics}
+\author{[Author Names]}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper studies how equilibrium outcomes in networked economic systems respond to changes in network structure, node-level fundamentals, and policy shocks. We formalize a network game in which the equilibrium mapping may be singular or nearly singular because of feedback and strategic interdependence across links. In this setting, the standard inverse of the Jacobian is unavailable, and the group inverse provides the natural generalized inverse for local comparative statics. We derive equilibrium response formulas, characterize network multipliers, and show how the group inverse captures the propagation of perturbations through the network. We also interpret the comparative statics in welfare terms and provide an application to a networked public goods or production environment. The approach is designed for theory-oriented economic analysis and is well suited to journals in economic theory and public economics.
+\end{abstract}
+
+\section{Introduction}
+
+\input{sections/introduction}
+
+\section{Model}
+
+\input{sections/model}
+
+\section{Centrality, Network Structure, and the Group Inverse}
+
+\input{sections/network_structure}
+
+\section{Equilibrium Characterization}
+
+\input{sections/equilibrium}
+
+\section{Comparative Statics via the Group Inverse}
+
+\input{sections/comparative_statics}
+
+\section{Welfare and Policy}
+
+\input{sections/welfare}
+
+\section{Application}
+
+\input{sections/application}
+
+\section{Conclusion}
+
+\input{sections/conclusion}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\appendix
+\appendixpage
+
+\section{Proofs of the Main Results}
+\input{appendices/proofs}
+
+\section{Matrix Calculus and Generalized Inverses}
+\input{appendices/matrix_calculus}
+
+\section{Numerical Methods and Implementation}
+\input{appendices/numerics}
+
+\section{Additional Examples and Robustness}
+\input{appendices/examples}
+
+\end{document}
